@@ -1,0 +1,79 @@
+{
+  "name": "personal-wiki",
+  "displayName": "Personal Wiki - 个人知识库",
+  "version": "1.0.0",
+  "description": "基于 Karpathy LLM Wiki 理念的个人知识管理技能，支持碎片化学习、自动整理、智能问答",
+  "author": "张家诚 (诚)",
+  "license": "MIT",
+  "tags": [
+    "knowledge-management",
+    "learning",
+    "wiki",
+    "productivity",
+    "llm-wiki",
+    "karpathy",
+    "chinese"
+  ],
+  "category": "productivity",
+  "language": "zh-CN",
+  "main": "SKILL.md",
+  "files": [
+    "SKILL.md",
+    "workflows.md",
+    "README.md",
+    "scripts/",
+    "templates/"
+  ],
+  "scripts": {
+    "init": "python scripts/init_wiki.py",
+    "ingest": "python scripts/ingest.py",
+    "query": "python scripts/query.py",
+    "lint": "python scripts/lint.py",
+    "export": "python scripts/export.py"
+  },
+  "triggers": [
+    "处理 inbox",
+    "收集收藏",
+    "搜索",
+    "检查 wiki 健康",
+    "生成周报",
+    "查看 index",
+    "初始化知识库"
+  ],
+  "examples": [
+    {
+      "name": "从零搭建",
+      "prompt": "帮我搭建一个 AI 产品学习的知识库",
+      "description": "初始化知识库结构"
+    },
+    {
+      "name": "处理内容",
+      "prompt": "处理 inbox",
+      "description": "处理待处理的文章/笔记"
+    },
+    {
+      "name": "知识问答",
+      "prompt": "我收藏了哪些 AI 产品求职资源？",
+      "description": "对知识库提问"
+    },
+    {
+      "name": "健康检查",
+      "prompt": "检查 wiki 健康",
+      "description": "扫描知识库发现问题"
+    },
+    {
+      "name": "生成报告",
+      "prompt": "生成周报",
+      "description": "生成本周学习总结"
+    }
+  ],
+  "requirements": {
+    "openclaw": ">=2026.3.0",
+    "python": ">=3.8"
+  },
+  "homepage": "https://github.com/openclaw/skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/skills/tree/main/personal-wiki"
+  }
+}
