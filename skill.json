@@ -3,7 +3,7 @@
   "displayName": "Personal Wiki - 个人知识库",
   "version": "1.0.0",
   "description": "基于 Karpathy LLM Wiki 理念的个人知识管理技能，支持碎片化学习、自动整理、智能问答",
-  "author": "张家诚 (诚)",
+  "author": "(诚)",
   "license": "MIT",
   "tags": [
     "knowledge-management",
